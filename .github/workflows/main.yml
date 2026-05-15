@@ -2,7 +2,7 @@ name: Ranking Bot
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # 6時間ごと（UTC）
+    - cron: "0 */4 * * *"   # 4時間ごと（UTC）
   workflow_dispatch:
 
 permissions:
