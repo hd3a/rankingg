@@ -2,9 +2,9 @@
 
 対象: 過去24時間
 
-- コメント総数: 1767
+- コメント総数: 1768
 - 返信総数: 2373
-- 参加人数: 132
+- 参加人数: 133
 
 更新: {{ 'now' | date: "%Y-%m-%d %H:%M:%S" }}
 
@@ -361,48 +361,51 @@
 **117位 watamax**  
 合計: 2（コメント 1 / 返信 1）
 
-**118位 -tondemonai-**  
+**118位 nonnbennrinndara**  
 合計: 1（コメント 1 / 返信 0）
 
-**119位 21438f**  
+**119位 -tondemonai-**  
 合計: 1（コメント 1 / 返信 0）
 
-**120位 yoshikin000**  
+**120位 21438f**  
 合計: 1（コメント 1 / 返信 0）
 
-**121位 SerialDesignationQMD**  
+**121位 yoshikin000**  
 合計: 1（コメント 1 / 返信 0）
 
-**122位 hanakokun_love**  
+**122位 SerialDesignationQMD**  
 合計: 1（コメント 1 / 返信 0）
 
-**123位 Signal-naru_629**  
+**123位 hanakokun_love**  
 合計: 1（コメント 1 / 返信 0）
 
-**124位 pantaro-555**  
+**124位 Signal-naru_629**  
 合計: 1（コメント 1 / 返信 0）
 
-**125位 H_Curbler**  
+**125位 pantaro-555**  
 合計: 1（コメント 1 / 返信 0）
 
-**126位 tkmryt**  
+**126位 H_Curbler**  
 合計: 1（コメント 1 / 返信 0）
 
-**127位 harupakapaka**  
+**127位 tkmryt**  
 合計: 1（コメント 1 / 返信 0）
 
-**128位 Hyo_Ankai**  
+**128位 harupakapaka**  
 合計: 1（コメント 1 / 返信 0）
 
-**129位 rakko_shark**  
+**129位 Hyo_Ankai**  
+合計: 1（コメント 1 / 返信 0）
+
+**130位 rakko_shark**  
 合計: 1（コメント 0 / 返信 1）
 
-**130位 rakko_squalo**  
+**131位 rakko_squalo**  
 合計: 1（コメント 0 / 返信 1）
 
-**131位 kurimamzyulove0104**  
+**132位 kurimamzyulove0104**  
 合計: 1（コメント 0 / 返信 1）
 
-**132位 Karin310103**  
+**133位 Karin310103**  
 合計: 1（コメント 0 / 返信 1）
 
