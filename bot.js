@@ -28,6 +28,7 @@ async function safeFetch(url) {
       }
 
       await sleep(RETRY_WAIT);
+
       return safeFetch(url);
     }
 
@@ -57,6 +58,7 @@ async function parallelMap(arr, limit, fn) {
 // 平均
 function average(arr) {
   if (arr.length === 0) return 0;
+
   return arr.reduce((a, b) => a + b, 0) / arr.length;
 }
 
@@ -73,6 +75,7 @@ function stddev(arr, avg) {
 // 偏差値
 function hensachi(value, avg, sd) {
   if (sd === 0) return 50;
+
   return 50 + ((value - avg) / sd) * 10;
 }
 
@@ -94,12 +97,14 @@ function hensachi(value, avg, sd) {
       `https://api.scratch.mit.edu/studios/${studioId}/comments?offset=${offset}&limit=${LIMIT}`
     );
 
-    if (!comments || comments.length === 0) break;
+    if (!comments || comments.length === 0) {
+      break;
+    }
 
     const replyTargets = [];
 
     for (const c of comments) {
-      // 24時間超えたら終了
+      // 24時間より古いコメントで終了
       if (now - new Date(c.datetime_created).getTime() > DAY) {
         stop = true;
         break;
@@ -121,7 +126,7 @@ function hensachi(value, avg, sd) {
         (receivedReplies.get(username) || 0) + c.reply_count
       );
 
-      // 返信があるコメントだけ取得対象
+      // 返信取得対象
       if (c.reply_count > 0) {
         replyTargets.push(c.id);
       }
@@ -159,10 +164,11 @@ function hensachi(value, avg, sd) {
     ...receivedReplies.keys()
   ]);
 
-  // コメント+返信 合計配列
+  // 活動数配列
   const totals = [...users].map(name => {
     const c = commentUsers.get(name) || 0;
     const r = replyUsers.get(name) || 0;
+
     return c + r;
   });
 
@@ -170,12 +176,13 @@ function hensachi(value, avg, sd) {
   const avg = average(totals);
   const sd = stddev(totals, avg);
 
-  // ランキング生成
+  // ランキング
   const ranking = [...users]
     .map(name => {
       const comments = commentUsers.get(name) || 0;
       const replies = replyUsers.get(name) || 0;
-      const received = receivedReplies.get(name) || 0;
+      const receivedRepliesCount =
+        receivedReplies.get(name) || 0;
 
       const total = comments + replies;
 
@@ -183,7 +190,7 @@ function hensachi(value, avg, sd) {
         name,
         comments,
         replies,
-        received,
+        receivedReplies: receivedRepliesCount,
         total,
         hensachi: hensachi(total, avg, sd)
       };
@@ -195,7 +202,6 @@ function hensachi(value, avg, sd) {
 
   md += `対象: 過去24時間\n\n`;
 
-  md += `## 全体統計\n\n`;
   md += `- コメント総数: ${totalComments}\n`;
   md += `- 返信総数: ${totalReplies}\n`;
   md += `- 参加人数: ${users.size}\n`;
@@ -207,19 +213,31 @@ function hensachi(value, avg, sd) {
   md += `---\n\n`;
 
   ranking.forEach((u, i) => {
-    md += `## ${i + 1}位 ${u.name}\n\n`;
+    const hs = u.hensachi.toFixed(1);
 
-    md += `- 合計活動数: ${u.total}\n`;
-    md += `- コメント数: ${u.comments}\n`;
-    md += `- 返信数: ${u.replies}\n`;
-    md += `- 返信された数: ${u.received}\n`;
-    md += `- 偏差値: ${u.hensachi.toFixed(1)}\n\n`;
+    // 偏差値45未満で赤字
+    const hsText =
+      u.hensachi < 45
+        ? `<span style="color:red">偏差値 ${hs}</span>`
+        : `偏差値 ${hs}`;
+
+    md += `**${i + 1}位 ${u.name}**  \n`;
+
+    md +=
+      `合計: ${u.total}` +
+      `（コメント ${u.comments}` +
+      ` / 返信 ${u.replies}` +
+      ` / 返信された数 ${u.receivedReplies}` +
+      ` / ${hsText}）\n\n`;
   });
 
+  // README.md 出力
   fs.writeFileSync("README.md", md);
 
-  // username.txt
-  const namesOnly = ranking.map(u => u.name).join("\n");
+  // username.txt 出力
+  const namesOnly = ranking
+    .map(u => u.name)
+    .join("\n");
 
   fs.writeFileSync("username.txt", namesOnly);
 
