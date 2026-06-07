@@ -1,7 +1,7 @@
 // bot.js
 const fs = require("fs");
 
-const studioId = "51396308";
+const studioId = "51179261";
 
 const LIMIT = 40;
 const DAY = 24 * 60 * 60 * 1000;
