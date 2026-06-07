@@ -4,7 +4,7 @@ const fs = require("fs");
 const studioId = "51179261";
 
 const LIMIT = 40;
-const DAY = 24 * 60 * 60 * 1000 * 7 ;
+const DAY = 24 * 60 * 60 * 1000;
 
 const PAGE_WAIT = 120;
 const REPLY_PARALLEL = 6;
