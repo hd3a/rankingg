@@ -2,11 +2,11 @@
 
 対象: 過去24時間
 
-- コメント総数: 367
+- コメント総数: 366
 - 返信総数: 1193
 - 参加人数: 71
-- 平均活動数: 21.97
-- 標準偏差: 28.82
+- 平均活動数: 21.96
+- 標準偏差: 28.80
 
 更新: {{ 'now' | date: "%Y-%m-%d %H:%M:%S" }}
 
@@ -40,7 +40,7 @@
 合計: 69（コメント 0 / 返信 69 / 返信された数 0 / 偏差値 66.3）
 
 **10位 kannmi-**  
-合計: 43（コメント 21 / 返信 22 / 返信された数 56 / 偏差値 57.3）
+合計: 42（コメント 20 / 返信 22 / 返信された数 56 / 偏差値 57.0）
 
 **11位 rikuoworiku**  
 合計: 41（コメント 7 / 返信 34 / 返信された数 40 / 偏差値 56.6）
@@ -78,11 +78,11 @@
 **22位 GojoSatoruSAIKOU**  
 合計: 24（コメント 11 / 返信 13 / 返信された数 19 / 偏差値 50.7）
 
-**23位 owo_milk_owo**  
-合計: 24（コメント 5 / 返信 19 / 返信された数 19 / 偏差値 50.7）
-
-**24位 ryona-daisuki**  
+**23位 ryona-daisuki**  
 合計: 23（コメント 7 / 返信 16 / 返信された数 15 / 偏差値 50.4）
+
+**24位 owo_milk_owo**  
+合計: 23（コメント 4 / 返信 19 / 返信された数 19 / 偏差値 50.4）
 
 **25位 Tadanosatuki**  
 合計: 23（コメント 8 / 返信 15 / 返信された数 17 / 偏差値 50.4）
@@ -135,20 +135,20 @@
 **41位 amanita_caesarea**  
 合計: 7（コメント 1 / 返信 6 / 返信された数 0 / <span style="color:red">偏差値 44.8</span>）
 
-**42位 raikou2015**  
+**42位 basekooo**  
+合計: 6（コメント 4 / 返信 2 / 返信された数 4 / <span style="color:red">偏差値 44.5</span>）
+
+**43位 raikou2015**  
 合計: 6（コメント 3 / 返信 3 / 返信された数 0 / <span style="color:red">偏差値 44.5</span>）
 
-**43位 abokadosyaritatu**  
+**44位 abokadosyaritatu**  
 合計: 6（コメント 1 / 返信 5 / 返信された数 1 / <span style="color:red">偏差値 44.5</span>）
 
-**44位 Melura8739**  
+**45位 Melura8739**  
 合計: 6（コメント 0 / 返信 6 / 返信された数 0 / <span style="color:red">偏差値 44.5</span>）
 
-**45位 furutsun-migggg**  
+**46位 furutsun-migggg**  
 合計: 5（コメント 3 / 返信 2 / 返信された数 5 / <span style="color:red">偏差値 44.1</span>）
-
-**46位 basekooo**  
-合計: 5（コメント 3 / 返信 2 / 返信された数 4 / <span style="color:red">偏差値 44.1</span>）
 
 **47位 TATATA724**  
 合計: 5（コメント 4 / 返信 1 / 返信された数 2 / <span style="color:red">偏差値 44.1</span>）
@@ -192,23 +192,23 @@
 **60位 _mac_os_**  
 合計: 2（コメント 1 / 返信 1 / 返信された数 2 / <span style="color:red">偏差値 43.1</span>）
 
-**61位 ruberan555**  
+**61位 pcpr2020**  
 合計: 1（コメント 1 / 返信 0 / 返信された数 0 / <span style="color:red">偏差値 42.7</span>）
 
-**62位 ----q**  
+**62位 ruberan555**  
 合計: 1（コメント 1 / 返信 0 / 返信された数 0 / <span style="color:red">偏差値 42.7</span>）
 
-**63位 MGA1111-sub-2**  
+**63位 ----q**  
 合計: 1（コメント 1 / 返信 0 / 返信された数 0 / <span style="color:red">偏差値 42.7</span>）
 
-**64位 kohappy-1go**  
+**64位 MGA1111-sub-2**  
 合計: 1（コメント 1 / 返信 0 / 返信された数 0 / <span style="color:red">偏差値 42.7</span>）
 
-**65位 kamenriderku-ga**  
+**65位 kohappy-1go**  
+合計: 1（コメント 1 / 返信 0 / 返信された数 0 / <span style="color:red">偏差値 42.7</span>）
+
+**66位 kamenriderku-ga**  
 合計: 1（コメント 1 / 返信 0 / 返信された数 1 / <span style="color:red">偏差値 42.7</span>）
-
-**66位 frisk-scratch**  
-合計: 1（コメント 1 / 返信 0 / 返信された数 0 / <span style="color:red">偏差値 42.7</span>）
 
 **67位 2_21**  
 合計: 1（コメント 0 / 返信 1 / 返信された数 0 / <span style="color:red">偏差値 42.7</span>）
@@ -219,9 +219,9 @@
 **69位 reisyo_saiko**  
 合計: 1（コメント 0 / 返信 1 / 返信された数 0 / <span style="color:red">偏差値 42.7</span>）
 
-**70位 hikakin-mania-**  
+**70位 Sabu-Soka**  
 合計: 1（コメント 0 / 返信 1 / 返信された数 0 / <span style="color:red">偏差値 42.7</span>）
 
-**71位 Sabu-Soka**  
+**71位 hikakin-mania-**  
 合計: 1（コメント 0 / 返信 1 / 返信された数 0 / <span style="color:red">偏差値 42.7</span>）
 
